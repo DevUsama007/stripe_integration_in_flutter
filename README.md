@@ -42,3 +42,25 @@ cd flutter-stripe-integration
 
 ### 2️⃣ Install dependencies
 flutter pub get
+
+### 3️⃣ Setup Backend
+
+Use the provided Node.js or Firebase Functions example to create a PaymentIntent.
+
+Add your Stripe Secret Key in the backend.
+
+Start your backend server (e.g., http://localhost:3000).
+
+### 4️⃣ Update Flutter App
+
+Add your Stripe Publishable Key in Flutter:
+
+Stripe.publishableKey = "pk_test_...";
+
+---
+### 🧪 Test Cards
+| Card Number           | Description           |
+| --------------------- | --------------------- |
+| `4242 4242 4242 4242` | ✅ Successful payment  |
+| `4000 0000 0000 0002` | ❌ Declined payment    |
+| `4000 0027 6000 3184` | 🔒 3D Secure required  |
