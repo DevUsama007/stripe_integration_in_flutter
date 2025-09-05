@@ -49,11 +49,12 @@ minSdk 21 'required'
 
 ---
 ### 🧪 Test Cards
-| Card Number           | Description           |
-| --------------------- | --------------------- |
-| `4242 4242 4242 4242` | ✅ Successful payment  |
-| `4000 0000 0000 0002` | ❌ Declined payment    |
-| `4000 0027 6000 3184` | 🔒 3D Secure required  |
+| Card Type  | Number                | Expiry | CVC | Description                            |
+| ---------- | --------------------- | ------ | --- | -------------------------------------- |
+| Visa       | `4242 4242 4242 4242` | 12/34  | 123 | Always succeeds                        |
+| Mastercard | `5555 5555 5555 4444` | 12/34  | 123 | Always succeeds                        |
+| 3D Secure  | `4000 0027 6000 3184` | 12/34  | 123 | Requires authentication (3DS)          |
+| Declined   | `4000 0000 0000 9995` | 12/34  | 123 | Always fails with "insufficient funds" |
 
 ---
 
