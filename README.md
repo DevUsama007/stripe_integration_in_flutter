@@ -45,7 +45,9 @@ flutter pub get
 ### 3️⃣ Setup
 
 minSdk 21 'required'
+
 'must update this ': stripe_integration_in_flutter/blob/main/android/app/src/main/res/values-night/styles.xml
+
 'updation required ':stripe_integration_in_flutter/blob/main/android/app/src/main/res/values/styles.xml
 
 ---
