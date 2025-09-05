@@ -37,7 +37,7 @@ A **Flutter project** demonstrating how to integrate **Stripe Payments** using t
 
 ### 1️⃣ Clone the repo
 
-git clone https://github.com/your-username/flutter-stripe-integration.git
+git clone https://github.com/your-username/stripe_integration_in_flutter.git
 cd flutter-stripe-integration
 
 ### 2️⃣ Install dependencies
@@ -64,3 +64,15 @@ Stripe.publishableKey = "pk_test_...";
 | `4242 4242 4242 4242` | ✅ Successful payment  |
 | `4000 0000 0000 0002` | ❌ Declined payment    |
 | `4000 0027 6000 3184` | 🔒 3D Secure required  |
+
+---
+
+### 💡 Contributing
+
+Pull requests are welcome! Feel free to open an issue to discuss improvements.
+
+---
+
+## ⭐ Support
+
+If you find this project helpful, please give it a ⭐ on GitHub!
