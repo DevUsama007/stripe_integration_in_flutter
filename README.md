@@ -1,16 +1,96 @@
-# stripe_integration_in_flutter
+# Flutter Stripe Integration 💳
 
-A new Flutter project.
+[![Flutter](https://img.shields.io/badge/Flutter-3.0+-blue.svg)](https://flutter.dev)
+[![Stripe](https://img.shields.io/badge/Stripe-API-blueviolet.svg)](https://stripe.com/docs/api)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-## Getting Started
+A **Flutter project** demonstrating how to integrate **Stripe Payments** using the [`flutter_stripe`](https://pub.dev/packages/flutter_stripe) package with a secure backend.  
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Features
+- Stripe **PaymentIntent API** integration  
+- Flutter **Payment Sheet** for easy checkout  
+- Secure backend communication (Node.js / Firebase example)  
+- Support for **test mode** using Stripe test cards  
+- Clean and simple project structure  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
+<!-- 
+## 📸 Screenshots
+> *(Add your app screenshots here)*  
+<p align="center">
+  <img src="screenshots/payment_flow.png" width="250">
+  <img src="screenshots/payment_sheet.png" width="250">
+</p>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+--- -->
+
+## 🛠️ Tech Stack
+- **Frontend:** Flutter, Dart, [`flutter_stripe`](https://pub.dev/packages/flutter_stripe)  
+- **Backend:** Node.js (Express) / Firebase Functions (example provided)  
+- **Payments:** Stripe API (Test & Live Mode)  
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repo
+```bash
+git clone https://github.com/your-username/flutter-stripe-integration.git
+cd flutter-stripe-integration
+
+2️⃣ Install dependencies
+flutter pub get
+
+3️⃣ Setup Backend
+
+Use the provided Node.js or Firebase Functions example to create a PaymentIntent.
+
+Add your Stripe Secret Key in the backend.
+
+Start your backend server (e.g., http://localhost:3000).
+
+4️⃣ Update Flutter App
+
+Add your Stripe Publishable Key in Flutter:
+
+Stripe.publishableKey = "pk_test_...";
+
+
+Update the backend API endpoint in the Flutter code:
+
+Uri.parse("http://localhost:3000/create-payment-intent")
+
+5️⃣ Run App
+flutter run
+
+🧪 Test Cards
+
+Use Stripe’s test cards in Test Mode:
+
+Card Number	Description
+4242 4242 4242 4242	✅ Successful payment
+4000 0000 0000 0002	❌ Declined payment
+4000 0027 6000 3184	🔒 3D Secure required
+
+👉 Full list: Stripe Test Cards
+
+⚠️ Notes
+
+Never expose your Stripe Secret Key in Flutter. Always create PaymentIntents on your server.
+
+Use Test Mode for development. Switch to Live Mode when ready.
+
+📄 License
+
+This project is licensed under the MIT License. See the LICENSE
+ file for details.
+
+💡 Contributing
+
+Pull requests are welcome! Feel free to open an issue to discuss improvements.
+
+⭐ Support
+
+If you find this project helpful, please give it a ⭐ on GitHub!
