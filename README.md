@@ -26,8 +26,7 @@ A **Flutter project** demonstrating how to integrate **Stripe Payments** using t
 --- -->
 
 ## 🛠️ Tech Stack
-- **Frontend:** Flutter, Dart, [`flutter_stripe`](https://pub.dev/packages/flutter_stripe)  
-- **Backend:** Node.js (Express) / Firebase Functions (example provided)  
+- **Frontend:** Flutter, Dart, [`flutter_stripe`](https://pub.dev/packages/flutter_stripe) 
 - **Payments:** Stripe API (Test & Live Mode)  
 
 ---
