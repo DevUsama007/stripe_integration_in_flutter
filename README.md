@@ -11,7 +11,6 @@ A **Flutter project** demonstrating how to integrate **Stripe Payments** using t
 ## ✨ Features
 - Stripe **PaymentIntent API** integration  
 - Flutter **Payment Sheet** for easy checkout  
-- Secure backend communication (Node.js / Firebase example)  
 - Support for **test mode** using Stripe test cards  
 - Clean and simple project structure  
 
@@ -45,6 +44,7 @@ flutter pub get
 
 ### 3️⃣ Setup
 
+minSdk 21 'required'
 
 
 ---
